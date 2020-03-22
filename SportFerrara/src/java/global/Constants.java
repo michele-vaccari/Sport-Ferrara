@@ -16,9 +16,11 @@ public class Constants {
   public static final boolean DEBUG=true; 
   
   /** Constants for db connection */
+  public static final String DB_SERVER_ADDRESS    = "localhost";
+  public static final String DB_PORT              = "3306";
   public static final String DB_USER_NAME         = "root";
-  public static final String DB_PASSWORD          = "";  
-  public static final String DB_CONNECTION_STRING = "jdbc:mysql://localhost/sportferrara?user="+DB_USER_NAME+"&password="+DB_PASSWORD;
+  public static final String DB_PASSWORD          = "";
+  public static final String DB_CONNECTION_STRING = "jdbc:mysql://" + DB_SERVER_ADDRESS + ":" + DB_PORT + "/sportferrara?user=" + DB_USER_NAME + "&password=" + DB_PASSWORD;
   
   /* Constants for log files*/
   public final static String LOG_DIR = "D:\\logs\\";
