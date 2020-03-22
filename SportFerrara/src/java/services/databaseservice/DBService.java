@@ -14,7 +14,7 @@ public class DBService extends Object {
   throws NotFoundDBException {
     
     try {
-      Class.forName("com.mysql.jdbc.Driver");
+      Class.forName("com.mysql.cj.jdbc.Driver");
       Connection connection = DriverManager.getConnection(Constants.DB_CONNECTION_STRING);               
       return new DataBase(connection);
     }
